@@ -5,6 +5,7 @@ pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
 pin "@hotwired/stimulus", to: "stimulus.min.js"
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
+pin_all_from "app/javascript/services", under: "services", to: "services"
 pin "@github/hotkey", to: "@github--hotkey.js" # @3.1.0
 
 # Custom namespace for local files
@@ -45,3 +46,7 @@ pin "d3-zoom" # @3.0.0
 pin "delaunator" # @5.0.1
 pin "internmap" # @2.0.3
 pin "robust-predicates" # @3.0.2
+pin "@floating-ui/dom", to: "@floating-ui--dom.js" # @1.6.9
+pin "@floating-ui/core", to: "@floating-ui--core.js" # @1.6.6
+pin "@floating-ui/utils", to: "@floating-ui--utils.js" # @0.2.6
+pin "@floating-ui/utils/dom", to: "@floating-ui--utils--dom.js" # @0.2.6
